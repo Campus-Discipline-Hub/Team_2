@@ -295,7 +295,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Research</li>
+                    <li class="breadcrumb-item active" aria-current="page">dept</li>
                 </ol>
             </nav>
         </div>
