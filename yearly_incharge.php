@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIC</title>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KR Connect</title>
+>>>>>>> 24984cbbcd82682494e47592683ccc47f1439f68
     <link rel="icon" type="image/png" sizes="32x32" href="image/icons/mkce_s.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -278,10 +285,15 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
 
 <body>
     <!-- Sidebar -->
     <?php include 'sidebar.php'; ?>
+=======
+<body>
+      <?php include 'sidebar.php'; ?>
+>>>>>>> 24984cbbcd82682494e47592683ccc47f1439f68
 
     <!-- Main Content -->
     <div class="content">
@@ -342,6 +354,7 @@
         <!-- Footer -->
         <?php include 'footer.php'; ?>
     </div>
+<<<<<<< HEAD
     <script>
         const loaderContainer = document.getElementById('loaderContainer');
 
@@ -446,4 +459,7 @@
 
 </body>
 
+=======
+</body>
+>>>>>>> 24984cbbcd82682494e47592683ccc47f1439f68
 </html>
