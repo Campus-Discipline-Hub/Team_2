@@ -354,7 +354,6 @@
         <!-- Footer -->
         <?php include 'footer.php'; ?>
     </div>
-<<<<<<< HEAD
     <script>
         const loaderContainer = document.getElementById('loaderContainer');
 
@@ -459,7 +458,4 @@
 
 </body>
 
-=======
-</body>
->>>>>>> 24984cbbcd82682494e47592683ccc47f1439f68
 </html>
