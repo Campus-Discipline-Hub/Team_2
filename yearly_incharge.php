@@ -200,7 +200,9 @@
         }
 
         .container-fluid {
-            padding: 20px;
+            width: 100%;
+            height: auto;
+            padding: auto;
         }
 
 
@@ -302,36 +304,130 @@
 
         <!-- Content Area -->
         <div class="container-fluid">
-            <div class="custom-tabs">
-                <ul class="nav nav-tabs" role="tablist"> <!-- Center the main tabs -->
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-bs-toggle="tab" id="family-main-tab" href="#family" role="tab" aria-selected="true">
-                            <span class="hidden-xs-down" style="font-size: 0.9em;"><i class="fas fa-book tab-icon"></i> Family</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="family" role="tabpanel">
-                        <ul class="nav navs-tabs justify-content-center ">
-                            <li class="nav-item" style="margin-right: 10px;"> <!-- Add margin between tabs -->
-                                <a class="nav-link active" style="font-size: 0.9em;" id="family-tab" data-bs-toggle="tab" href="#family" role="tab" aria-selected="true">
-                                    Family
-                                </a>
-                            </li>
-
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane p-20 active" id="family" role="tabpanel">
-                                
+            <div class="tab-content">
+                <div class="row">
+                    <!-- Form Container -->
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-header gradient-header">
+                                <h5 class="mb-0 text-white">
+                                    <i class="fas fa-clipboard-list me-2"></i>
+                                    Discipline Entry Form
+                                </h5>
                             </div>
-
+                            <div class="card-body">
+                                <form id="disciplineForm">
+                                    <div class="mb-3">
+                                        <label for="studentRollNo" class="form-label">
+                                            <i class="fas fa-user me-1"></i>
+                                            Student Roll No
+                                        </label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="studentRollNo" 
+                                                   value="927623BAD008" placeholder="Enter student roll number" required>
+                                            <button class="btn btn-outline-primary" type="button" 
+                                                    id="viewStudentBtn" title="View Student Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="incidentDate" class="form-label">
+                                            <i class="fas fa-calendar me-1"></i>
+                                            Date of Incident
+                                        </label>
+                                        <input type="date" class="form-control" id="incidentDate" required>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="issueType" class="form-label">
+                                            <i class="fas fa-exclamation-triangle me-1"></i>
+                                            Type of Issue
+                                        </label>
+                                        <select class="form-select" id="issueType" required>
+                                            <option value="">Select issue type</option>
+                                            <option value="Late">Late</option>
+                                            <option value="Absence">Absence</option>
+                                            <option value="Misbehavior">In-Discipline></option>
+                                            <option value="Dress Code Violation">Dress Code Violation</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">
+                                            <i class="fas fa-comment me-1"></i>
+                                            Description (Optional)
+                                        </label>
+                                        <textarea class="form-control" id="description" rows="3" 
+                                                  placeholder="Additional details about the incident"></textarea>
+                                    </div>
+                                    
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-paper-plane me-2"></i>
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-
-
-
-
-
+                    
+                    <!-- Student Details Container -->
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm" id="studentDetailsCard">
+                            <div class="card-header gradient-header">
+                                <h5 class="mb-0 text-white">
+                                    <i class="fas fa-user-graduate me-2"></i>
+                                    Student Details
+                                </h5>
+                            </div>
+                            <div class="card-body" id="studentDetailsContent">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary rounded-circle p-2 me-3">
+                                                <i class="fas fa-user text-white"></i>
+                                            </div>
+                                            <div>
+                                                <h6 class="mb-0">ARUNAGIRINATHAN</h6>
+                                                <small class="text-muted">Roll No: 927623BAD008</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-2">
+                                            <small class="text-muted">Class</small>
+                                            <div class="fw-medium">AI&DS - 3rd Year</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="border rounded p-2">
+                                            <small class="text-muted">Section</small>
+                                            <div class="fw-medium">A</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="alert alert-info d-flex align-items-center">
+                                            <i class="fas fa-info-circle me-2"></i>
+                                            <span>Previous Incidents: <strong>1</strong></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="alert alert-warning d-flex align-items-center">
+                                            <i class="fas fa-exclamation-triangle me-2"></i>
+                                            <small>Last Incident: Late Arrival - Sept 15, 2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -438,6 +534,77 @@
                 mobileOverlay.classList.remove('show');
                 body.classList.remove('sidebar-open');
             }
+        });
+
+        // Discipline Form Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const disciplineForm = document.getElementById('disciplineForm');
+            const viewStudentBtn = document.getElementById('viewStudentBtn');
+            const studentRollNoInput = document.getElementById('studentRollNo');
+            const incidentDateInput = document.getElementById('incidentDate');
+
+            // Set today's date as default
+            const today = new Date().toISOString().split('T')[0];
+            incidentDateInput.value = today;
+
+            // View Student Details Button (for demo purposes)
+            viewStudentBtn.addEventListener('click', function() {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Student Details',
+                    text: 'Student details are displayed in the panel on the right.',
+                    confirmButtonColor: '#4e73df'
+                });
+            });
+
+            // Form Submission
+            disciplineForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = {
+                    rollNo: studentRollNoInput.value.trim(),
+                    incidentDate: incidentDateInput.value,
+                    issueType: document.getElementById('issueType').value,
+                    description: document.getElementById('description').value.trim()
+                };
+
+                // Validate form
+                if (!formData.rollNo || !formData.incidentDate || !formData.issueType) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Incomplete Form',
+                        text: 'Please fill in all required fields.',
+                        confirmButtonColor: '#4e73df'
+                    });
+                    return;
+                }
+
+                // Show loading
+                Swal.fire({
+                    title: 'Submitting Report...',
+                    allowOutsideClick: false,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+
+                // Simulate form submission (replace with actual API call)
+                setTimeout(() => {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Report Submitted!',
+                        text: 'The discipline report has been submitted successfully.',
+                        confirmButtonColor: '#1cc88a'
+                    }).then(() => {
+                        // Reset form
+                        disciplineForm.reset();
+                        incidentDateInput.value = today;
+                        studentDetailsCard.style.display = 'none';
+                    });
+                }, 1500);
+            });
+
+
         });
     </script>
 
