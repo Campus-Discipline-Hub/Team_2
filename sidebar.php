@@ -193,7 +193,7 @@ display: inline-block;
             <i class="fas fa-home text-primary"></i>
             <span>Dashboard</span>
         </a>
-    <a href="Dept.php" class="menu-item">
+    <a href="dept.php" class="menu-item">
             <i class="fas fa-home text-primary"></i>
             <span>Department</span>
         </a>

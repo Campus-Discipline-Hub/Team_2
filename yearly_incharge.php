@@ -277,15 +277,8 @@
         }
     </style>
 </head>
-<<<<<<< HEAD
-
-<body>
-    <!-- Sidebar -->
-    <?php include 'sidebar.php'; ?>
-=======
 <body>
       <?php include 'sidebar.php'; ?>
->>>>>>> 24984cbbcd82682494e47592683ccc47f1439f68
 
     <!-- Main Content -->
     <div class="content">
