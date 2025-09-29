@@ -189,9 +189,17 @@ display: inline-block;
     </div>
 
     <div class="menu">
-    <a href="#" class="menu-item">
+    <a href="index.php" class="menu-item">
             <i class="fas fa-home text-primary"></i>
             <span>Dashboard</span>
+        </a>
+    <a href="Dept.php" class="menu-item">
+            <i class="fas fa-home text-primary"></i>
+            <span>Department</span>
+        </a>
+    <a href="yearly_incharge.php" class="menu-item">
+            <i class="fas fa-home text-primary"></i>
+            <span>Yearly-Incharge</span>
         </a>
 
       
